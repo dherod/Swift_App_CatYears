@@ -18,10 +18,13 @@ class ViewController: UIViewController {
         if( humanAge != nil )
         {
             let catAge = humanAge! * 7
-            txtCatAge.text =
-                "Your cat is "
-                + String(catAge)
-                + " years old in cat years!"
+            txtCatAge.text = "Your cat is \(catAge) years old in cat years!"
+            
+            // Alternate method using string concatenation.
+            // Perhaps should use this since for con-CAT-tenation :)
+                //"Your cat is "
+                //+ String(catAge)
+                //+ " years old in cat years!"
         }
         else
         {
