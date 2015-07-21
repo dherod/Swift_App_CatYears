@@ -14,11 +14,19 @@ class ViewController: UIViewController {
     
     @IBAction func btnCalc(sender: AnyObject) {
         let humanAge = Int(txtHumanAge.text!)
-        let catAge = humanAge! * 7
-        txtCatAge.text =
-            "Your cat is "
-            + String(catAge)
-            + " years old in cat years!"
+        
+        if( humanAge != nil )
+        {
+            let catAge = humanAge! * 7
+            txtCatAge.text =
+                "Your cat is "
+                + String(catAge)
+                + " years old in cat years!"
+        }
+        else
+        {
+            txtCatAge.text = "Please enter a valid number for age"
+        }
     }
     
     override func viewDidLoad() {
