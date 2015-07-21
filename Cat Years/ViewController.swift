@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Create custom color from image file and set background to blend with image file.
+        let customColor = UIColor(red: 162/255, green: 153/255, blue: 144/255, alpha: 1.0);
+        self.view.backgroundColor = customColor
+        
     }
 
     override func didReceiveMemoryWarning() {
